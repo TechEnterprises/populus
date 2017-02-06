@@ -60,7 +60,7 @@ def compute_import_remappings(source_paths, installed_package_locations):
         )
 
 
-def compute_project_compilation_arguments(contracts_source_dir, root_installed_packages_dir):
+def comptue_compilation_arguments(contracts_source_dir, root_installed_packages_dir):
     project_source_paths = find_solidity_source_files(contracts_source_dir)
 
     # TODO: this should only compute remappings for solidity files which part

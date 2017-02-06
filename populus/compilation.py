@@ -14,7 +14,7 @@ from populus.utils.filesystem import (
 )
 
 from populus.utils.compile import (
-    compute_project_compilation_arguments,
+    comptue_compilation_arguments,
     process_compiler_output,
     get_contract_meta,
 )
@@ -29,7 +29,7 @@ def compile_project_contracts(project, compiler_settings=None):
 
     compiler_settings.setdefault('output_values', DEFAULT_OUTPUT_VALUES)
 
-    result = compute_project_compilation_arguments(
+    result = comptue_compilation_arguments(
         project.contracts_source_dir,
         project.installed_packages_dir,
     )
